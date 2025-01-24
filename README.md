@@ -4,6 +4,7 @@
 - cloudflare workers
 - hono
 
-refer: https://discord-hono.luis.fun/
+# References
+- https://discord-hono.luis.fun/
 
 
