@@ -1,16 +1,11 @@
-import { Button, Components, DiscordHono } from 'discord-hono'
+import { helloCommand } from './commands/helloCommand';
+import { helpCommand } from './commands/helpCommand';
+import { deleteSelfComponent } from './components/deleteSelfComponent';
+import { DiscordHono } from 'discord-hono';
 
 const app = new DiscordHono()
-  .command('hello', c => c.res('world!'))
-  .command('help', c =>
-    c.res({
-      content: `text: ${c.var.text}`,
-      components: new Components().row(
-        new Button('https://discord-hono.luis.fun', ["📑", 'Docs'], 'Link'),
-        new Button('delete-self', ['🗑️', 'Delete'], 'Secondary'),
-      ),
-    }),
-  )
-  .component('delete-self', c => c.resDeferUpdate(c.followupDelete))
+  .command('hello', helloCommand)
+  .command('help', helpCommand)
+  .component('delete-self', deleteSelfComponent);
 
-export default app
+export default app;
