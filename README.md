@@ -1,8 +1,9 @@
-```
-npm install
-npm run dev
-```
+# Discord bot
 
-```
-npm run deploy
-```
+・node.js
+・cloudflare workers
+・hono
+
+refer: https://discord-hono.luis.fun/
+
+
