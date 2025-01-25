@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "test": "vitest",
+    "tsc": "tsc",
     "register": "tsc && node --env-file=.env dist/register.js",
     "deploy": "wrangler deploy --minify",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
