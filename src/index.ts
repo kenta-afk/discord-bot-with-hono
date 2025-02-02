@@ -3,6 +3,7 @@ import { helpCommand } from './commands/help';
 import { omikujiCommand } from './commands/omikuji';
 import { konayukiCommand } from './commands/konayuki';
 import { youtubeCommand } from './commands/youtube';
+import { ohayouCommand } from './commands/ohayou';
 import { deleteSelfComponent } from './components/deleteSelfComponent';
 import { omikujiComponent } from './components/omikujiComponent';
 import { DiscordHono } from 'discord-hono';
@@ -14,6 +15,7 @@ const app = new DiscordHono()
   .command('omikuji', omikujiCommand)
   .command('konayuki', konayukiCommand)
   .command('youtube', youtubeCommand)
+  .command('ohayou', ohayouCommand)
   .component('delete-self', deleteSelfComponent)
   .component('omikujiStart', omikujiComponent)
   

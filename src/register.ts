@@ -5,6 +5,7 @@ const commands = [
     new Command('omikuji', 'Kind words from jo-ji'),
     new Command('konayuki', 'konayuki song by jo-ji'),
     new Command('youtube', 'youtube link'),
+    new Command('ohayou', 'response ohayou'),
     new Command('help', 'response help').options(new Option('text', 'with text')),
 ]
 
